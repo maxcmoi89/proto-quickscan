@@ -930,6 +930,7 @@ footer {
   -webkit-background-size: cover;
   position: relative;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .question__item .question__content {
   position: absolute;
@@ -946,7 +947,7 @@ footer {
   transform: translateY(-100%);
   z-index: 5;
 }
-.question__item:hover .question__content {
+.question__item:hover .question__content, .question__item:active .question__content, .question__item:focus .question__content {
   display: block;
 }
 

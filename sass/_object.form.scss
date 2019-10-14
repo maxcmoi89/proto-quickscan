@@ -129,6 +129,7 @@
   @include background_size("../img/question.svg",no-repeat,center,center,cover);
   position: relative;
   flex-shrink:0;
+  cursor: pointer;
 
   .question__content{
     position: absolute;
@@ -146,7 +147,7 @@
     z-index: 5;
   }
 
-  &:hover .question__content{
+  &:hover .question__content, &:active .question__content,  &:focus .question__content{
     display: block;
   }
 }
