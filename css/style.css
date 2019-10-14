@@ -827,6 +827,7 @@ footer {
   align-self: stretch;
   margin: 0.5%;
   position: relative;
+  cursor: pointer;
 }
 .form__item label {
   border: 1px solid #E6E6E6;
