@@ -8,11 +8,12 @@
   align-self: stretch;
   margin:0.5%;
   position: relative;
-  cursor: pointer;
+
 
   label{
     border: 1px solid $color-border-form;
     border-radius: 12px;
+    cursor: pointer;
   }
 
   .question__item{
@@ -241,6 +242,14 @@
       }
     }
   }
+
+  .subtitle--section,.form__item{
+    & .question__item{
+      .question__content{
+        width: 300px;
+      }
+    }
+  }
 }
 
 @media(max-width:550px){
@@ -256,8 +265,7 @@
 
 
 @media(max-width:400px){
-  .form__item{
-
+  .form__item, .subtitle--section{
     & .question__item{
       .question__content{
         width: 250px;

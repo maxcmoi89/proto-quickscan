@@ -827,11 +827,11 @@ footer {
   align-self: stretch;
   margin: 0.5%;
   position: relative;
-  cursor: pointer;
 }
 .form__item label {
   border: 1px solid #E6E6E6;
   border-radius: 12px;
+  cursor: pointer;
 }
 .form__item .question__item {
   position: absolute;
@@ -1011,6 +1011,10 @@ footer {
   .form__item .question__item .question__content {
     width: 300px;
   }
+
+  .subtitle--section .question__item .question__content, .form__item .question__item .question__content {
+    width: 300px;
+  }
 }
 @media (max-width: 550px) {
   .form__submit {
@@ -1022,7 +1026,7 @@ footer {
   }
 }
 @media (max-width: 400px) {
-  .form__item .question__item .question__content {
+  .form__item .question__item .question__content, .subtitle--section .question__item .question__content {
     width: 250px;
   }
 }
