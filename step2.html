@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  	<meta charset="UTF-8">
+
+    <title>Wallonie - Calcul de mon PEB</title>
+
+  	<link rel="stylesheet" href="css/style.css">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Catamaran|Work+Sans:600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="header__menu column column--spaced column--centered">
+        <h1 class="title--site">
+          <span class="hide">Wallonie - Calcul de mon PEB</span>
+          <a href="index.html" title="Retourner à la page d'accueil">
+            <img src="img/wallonie.svg" alt="Logo du service public de la Wallonie"/>
+          </a>
+        </h1>
+
+        <ul class="header__partners list-inline">
+          <li class="partner__item">
+            <a href="https://energie.wallonie.be/fr/aides-et-primes.html?IDC=6358" class="partner__link" target="_blank" title="Visite le site de Walloreno">
+              <img src="img/wallo.png" class="partner__logo" alt="Logo de Walloreno" />
+            </a>
+          </li>
+
+          <li class="partner__item">
+            <a href="https://www.maisonpassive.be/" class="partner__link" target="_blank" title="Visite le site de PMP">
+              <img src="img/pmp.png" class="partner__logo partner__logo--small" alt="Logo de PMP" />
+            </a>
+          </li>
+
+          <li class="partner__item">
+            <a href="http://biodiversite.wallonie.be/fr/projets-life.html?IDC=3260" class="partner__link" target="_blank" title="Visite le site de Life">
+              <img src="img/life.png" class="partner__logo" alt="Logo de Life" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__steps wrapper--main wrapper--centered">
+        <h2 class="title--section">
+          2. Validation de la typologie
+        </h2>
+
+        <nav class="steps__menu">
+          <ul class="steps__list column">
+            <li class="steps__item step--1">
+              <a href="step1.html" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  1/7 <span class="hide">Détermination de la typologie</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--2">
+              <a href="step2.html" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  2/7 <span class="hide">Validation de la typologie</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--3 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  3/7 <span class="hide">Isolation</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--4 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  4/7 <span class="hide">Ventilation et étanchéité à l'air</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--5 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  5/7 <span class="hide">Systèmes de chauffage</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--6 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  6/7 <span class="hide">Systèmes de production d'eau chaude</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--7 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  7/7 <span class="hide">Energie renouvelable</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <form class="wrapper--form">
+          <formset class="form__question">
+            <h3 class="subtitle--section title--form">
+              <legend>Quel est le type d’architecture de l’habitation ?</legend>
+            </h3>
+            <ul class="form__line column column--centered">
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house1" class="form__input form--block"/>
+                <label for="house1" class="column column--centered">
+                  <img src="img/house1.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La maison de type "ouvrière" avec passage latéralligne
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Maison de type « ouvrière » construite dans ou à proximité des villes, de petite taille, présentant de petits volumes, avec des plafonds bas.</p>
+                    <p>2 pièces au rez-de-chaussée et 2 pièces à l’étage dans le volume principal, annexes à l’arrière (abritant souvent cuisine et salle de bain), grenier non aménagé à l’origine.</p>
+                    <p>Largeur de façade correspondant souvent à une porte et une fenêtre au rez ; 2 fenêtres à l’étage.</p>
+                    <p>Habitation de type « 3 façades », présentant un passage latéral ou maison de bout de rangée.
+                      Date de construction probable: début XXème siècle.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house2" class="form__input form--block"/>
+                <label for="house2" class="column column--centered">
+                  <img src="img/house2.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                   La maison de type "maison de maître mitoyenne
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Maison urbaine ou péri-urbaine d’assez grande taille ; plus grande que les maisons ouvrières, hauteurs sous plafonds importantes ; au moins au rez.</p>
+                    <p>Le rez et deux étages sont généralement aménagés d’origine. La maison possède en outre encore souvent des caves et un grenier. Une ou des annexes à l’arrière abritent souvent notamment la cuisine et la salle de bain.</p>
+                    <p>Largeur de façade plus importante que les maisons ouvrières correspondant au minimum à une porte et deux fenêtres au rez ; 3 fenêtres aux étages.</p>
+                    <p>2 façades – maison mitoyenne située entre 2 autres habitations</p>
+                    <p>Date de construction probable : début XXème siècle.</p>
+
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house3" class="form__input form--block"/>
+                <label for="house3" class="column column--centered">
+                  <img src="img/house3.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La maison de type "maison de maître semi-mitoyenne
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Maison urbaine ou péri-urbaine d’assez grande taille ; plus grande que les maisons ouvrières, hauteurs sous plafonds importantes ; au moins au rez.</p>
+                    <p>Le rez et deux étages sont généralement aménagés d’origine. La maison possède en outre encore souvent des caves et un grenier. Une ou des annexes à l’arrière abritent souvent notamment la cuisine et la salle de bains.</p>
+                    <p>Largeur de façade plus importante que les maisons ouvrières correspondant au minimum à une porte et deux fenêtres au rez ; 3 fenêtres aux étages.</p>
+                    <p>3 façades – passage latéral ou maison de bout de rangée ou parcelle adjacente non construite.</p>
+                    <p>Date de construction probable : début XXème siècle.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house4" class="form__input form--block"/>
+                <label for="house4" class="column column--centered">
+                  <img src="img/house4.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La maison de type "maison de maître indépendante
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Maison urbaine ou péri-urbaine d’assez grande taille ; plus grande que les maisons ouvrières, hauteurs sous plafonds importantes ; au moins au rez.</p>
+                    <p>Le rez et deux étages sont généralement aménagés d’origine. La maison possède en outre encore souvent des caves et un grenier. Une ou des annexes à l’arrière abritent souvent notamment la cuisine et la salle de bains.</p>
+                    <p>Largeur de façade plus importante que les maisons ouvrières correspondant au minimum à une porte et deux fenêtres au rez ; 3 fenêtres aux étages.</p>
+                    <p>Maison indépendante, non accolée à d’autres habitations, éventuellement accolée à des dépendances (garage, …)</p>
+                    <p>Date de construction probable : début XXème siècle.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house5" class="form__input form--block"/>
+                <label for="house5" class="column column--centered">
+                  <img src="img/house5.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La villa des premières extensions urbaines d’avant 1970
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Maison en périphérie urbaine de géométrie assez complexe et avec différents matériaux de parements.</p>
+                    <p>Pièces de vies et souvent au moins une chambre ou un bureau au rez, chambres complémentaires éventuelles à l’étage sous toiture, caves (et garage) souvent sous tout le bâtiment</p>
+                    <p>Villa la plupart du temps indépendante, non accolée à d’autres habitations.</p>
+                    <p>Date de construction probable : entre 1946 et 1970.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house6" class="form__input form--block"/>
+                <label for="house6" class="column column--centered">
+                  <img src="img/house6.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                   La maison urbaine de type "bel étage mitoyenne d’avant 1970
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Habitation, dans ou à proximité d’une ville, souvent de type bel étage c’est-à-dire avec un garage situé au niveau ou un peu en-dessous de la route, pièces de vie au premier étage et pièces de nuit au deuxième étage. Les pièces de vie ne sont en général pas en contact direct avec le jardin (sauf si le terrain est en pente).</p>
+                    <p>Le hall d’entrée se situe soit au niveau du garage soit au niveau du premier étage avec un escalier extérieur.</p>
+                    <p>Grenier à l’origine non aménagé ; parfois toit principal plat.</p>
+                    <p>Maison mitoyenne, 2 façades, située entre d’autres.</p>
+                    <p>Date de construction probable : entre 1946 et 1970.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house7" class="form__input form--block"/>
+                <label for="house7" class="column column--centered">
+                  <img src="img/house7.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La maison urbaine de type « bel-étage semi-mitoyenne d’avant 1970
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Habitation, dans ou à proximité d’une ville, souvent de type bel étage c’est-à-dire avec un garage situé au niveau ou un peu en-dessous de la route, pièces de vie au premier étage et pièces de nuit au deuxième étage. Les pièces de vie ne sont en général pas en contact direct avec le jardin (sauf si le terrain est en pente).</p>
+                    <p>Le hall d’entrée se situe soit au niveau du garage soit au niveau du premier étage avec un escalier extérieur.</p>
+                    <p>Grenier à l’origine non aménagé ; parfois toit principal plat.</p>
+                    <p>Maison semi-mitoyenne, 3 façades – passage latéral ou maison de bout de rangée ou parcelle adjacente non construite.</p>
+                    <p>Date de construction probable : entre 1946 et 1970.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house8" class="form__input form--block"/>
+                <label for="house8" class="column column--centered">
+                  <img src="img/house8.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La villa de type "lotissement" (1971-1984)
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Habitation 3 ou 4 façades en banlieue, la plupart du temps située dans un lotissement.</p>
+                    <p>Pièces de vie au rez ; pièces de nuit à l’étage, en partie « encastrées » sous toiture. Grenier dans la pointe de toiture non aménagé.</p>
+                    <p>Date de construction probable : entre 1971 et 1984.</p>
+                    <p>Plusieurs typologies « villa de type lotissement »  existent et ne se distinguent que par la date de construction.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house9" class="form__input form--block"/>
+                <label for="house9" class="column column--centered">
+                  <img src="img/house9.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                  La villa de type "lotissement" (1985-1995)
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Habitation 3 ou 4 façades en banlieue, la plupart du temps située dans un lotissement.</p>
+                    <p>Pièces de vie au rez ; pièces de nuit à l’étage, en partie « encastrées » sous toiture. Grenier dans la pointe de toiture non aménagé.</p>
+                    <p>Date de construction probable : entre 1985 et 1995.</p>
+                    <p>Plusieurs typologies « villa de type lotissement »  existent et ne se distinguent que par la date de construction.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="house-type" id="house10" class="form__input form--block"/>
+                <label for="house10" class="column column--centered">
+                  <img src="img/house10.png" alt="Illustration du choix du type de maison" class="img--house label__img">
+                   La villa de type "lotissement" d'après 1995
+                </label>
+                <div class="question__item" data-question="date">
+                  <span class="hide">Afficher plus de détails sur la question</span>
+                  <div class="question__content">
+                    <p>Habitation 3 ou 4 façades en banlieue, la plupart du temps située dans un lotissement.</p>
+                    <p>Pièces de vie au rez ; pièces de nuit à l’étage, en partie « encastrées » sous toiture. Grenier dans la pointe de toiture non aménagé.</p>
+                    <p>Date de construction : après 1996.</p>
+                    <p>Plusieurs typologies « villa de type lotissement »  existent et ne se distinguent que par la date de construction.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </formset>
+          <div class="form__submit">
+            <input type="submit" class="bouton bouton--primary" value="Passer à l'étape suivante"/>
+          </div>
+        </form>
+
+      </section>
+    </main>
+    <footer>
+      <a href="https://spw.wallonie.be/" target="_blank" title="Visiter le site du service public de la wallonie">
+        <img src="img/wallonie--without.svg" alt="Logo du service public de la Wallonie" class="footer__logo"/>
+      </a>
+
+      <p class="footer__text">2019, service public de la Wallonie</p>
+    </footer>
+  </body>
+
+  <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+</html>

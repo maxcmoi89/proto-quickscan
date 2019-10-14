@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  	<meta charset="UTF-8">
+    <title>Wallonie - Calcul de mon PEB</title>
+  	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/remodal/remodal.css">
+    <link rel="stylesheet" href="css/remodal/remodal-default-theme.css">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Catamaran|Work+Sans:600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="header__menu column column--spaced column--centered">
+        <h1 class="title--site">
+          <span class="hide">Wallonie - Calcul de mon PEB</span>
+          <a href="index.html" title="Retourner à la page d'accueil">
+            <img src="img/wallonie.svg" alt="Logo du service public de la Wallonie"/>
+          </a>
+        </h1>
+
+        <ul class="header__partners list-inline">
+          <li class="partner__item">
+            <a href="https://energie.wallonie.be/fr/aides-et-primes.html?IDC=6358" class="partner__link" target="_blank" title="Visite le site de Walloreno">
+              <img src="img/wallo.png" class="partner__logo" alt="Logo de Walloreno" />
+            </a>
+          </li>
+
+          <li class="partner__item">
+            <a href="https://www.maisonpassive.be/" class="partner__link" target="_blank" title="Visite le site de PMP">
+              <img src="img/pmp.png" class="partner__logo partner__logo--small" alt="Logo de PMP" />
+            </a>
+          </li>
+
+          <li class="partner__item">
+            <a href="http://biodiversite.wallonie.be/fr/projets-life.html?IDC=3260" class="partner__link" target="_blank" title="Visite le site de Life">
+              <img src="img/life.png" class="partner__logo" alt="Logo de Life" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section--intro wrapper--main wrapper--centered column column--spaced column--centered">
+        <div class="home__intro">
+          <h2 class="title--section">L’outil « Quick scan »</h2>
+          <p class="intro__text">Bienvenue dans l’application Quickscan, outil gratuit qui évalue la performance énergétique de votre habitation et élabore des recommandations en vue de l'améliorer.</p>
+          <p class="intro__text">L’application est actuellement uniquement destinée aux maisons unifamiliales existantes construites avant 2010 ; elle n’est donc pas applicable aux appartements.</p>
+
+          <h3 class="subtitle--section">3 étapes principales</h3>
+          <ol class="intro__list">
+            <li class="intro__item">
+              <h4 class="title--item">1. Caractéristiques principales</h4>
+              <p> Sur base de quelques questions, votre habitation est associée à une typologie de référence</p>
+            </li>
+            <li class="intro__item">
+              <h4 class="title--item">2. Performances actuelles</h4>
+              <p>Grâce à vos réponses aux questions à choix multiples, la performance actuelle de votre habitation est évaluée</p>
+            </li>
+            <li class="intro__item">
+              <h4 class="title--item">1. Recommandations</h4>
+              <p>Un rapport de résultat est généré ; celui-ci reprend l’évaluation de la situation actuelle et des recommandations pertinentes en vue d’atteindre un label A ; pour plus de confort, plus d’économies et moins de production de CO2</p>
+            </li>
+          </ol>
+
+          <a href="step1.html" title="Aller à la première étape" class="bouton bouton--primary bouton--full">Commencer</a>
+        </div>
+
+        <img src="img/home.gif" alt="Image d'illustration des habitations wallones" class="intro__img"/>
+      <section>
+    </main>
+    <footer>
+      <a href="https://spw.wallonie.be/" target="_blank" title="Visiter le site du service public de la wallonie">
+        <img src="img/wallonie--without.svg" alt="Logo du service public de la Wallonie" class="footer__logo"/>
+      </a>
+
+      <p class="footer__text">2019, service public de la Wallonie</p>
+    </footer>
+
+    <div class="home__cookie">
+      <a href="#confidentiality-modal" class="cookie__link" title="Afficher les conditions d'utilisation">
+        <h2 class="title--cookie">Et ma confidentialité ?</h2>
+        <p class="subtitle--cookie">En savoir plus</p>
+      </a>
+    </div>
+
+    <div class="remodal" data-remodal-id="confidentiality-modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h2 class="title--section">Confidentialité</h2>
+  <div class="modal__content">
+    <p>Conformément à la réglementation en matière de protection des données, les informations personnelles communiquées ne seront utilisées par la DGO4 que pour les finalités suivantes : statistiques et évolution de l’outil «Quickscan». Ces données ne seront ni vendues ni utilisées à des fins de marketing. Ces données ne seront pas transmises à des tiers sans que votre consentement n’ait été donné préalablement. Ces données seront conservées aussi longtemps que nécessaire pour l’utilisation et le développement de l’outil. Vous pouvez, dans certains cas spécifiques, rectifier, demander à faire transmettre vos données ou vous opposer au traitement de celles-ci en contactant XXX.</p>
+  </div>
+  <button class="bouton bouton--inline bouton--primary bouton--accept">Accepter</button>
+  <button data-remodal-action="close" class="bouton bouton--inline bouton--primary">Fermer</button>
+</div>
+  </body>
+
+  <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/remodal.js"></script>
+
+  <script>
+    $(".bouton--accept").on("click",function(){
+      $(".home__cookie").toggleClass("hide");
+
+      var inst = $('[data-remodal-id=confidentiality-modal]').remodal();
+      inst.close();
+    })
+  </script>
+</html>

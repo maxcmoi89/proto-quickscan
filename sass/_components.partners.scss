@@ -1,0 +1,57 @@
+.partner__logo{
+  height: 50px;
+  width: auto;
+}
+
+
+.partner__logo--small{
+  height: 42px;
+}
+
+.partner__item{
+  &+&{
+    margin-left: make_em(40,15);
+  }
+}
+
+
+@media(max-width:800px){
+  .partner__logo{
+    height: 40px;
+    width: auto;
+  }
+
+
+  .partner__logo--small{
+    height: 34px;
+  }
+}
+
+
+@media(max-width:600px){
+  .header__partners{
+    margin-top: make_em(20,15);
+  }
+}
+
+
+@media(max-width:400px){
+  .partner__logo{
+    height: 30px;
+    width: auto;
+  }
+
+
+  .partner__logo--small{
+    height: 24px;
+  }
+}
+
+
+@media(max-width:350px){
+  .partner__item{
+    &+&{
+      margin-left: make_em(20,15);
+    }
+  }
+}

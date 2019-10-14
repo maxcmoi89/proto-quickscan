@@ -1,0 +1,22 @@
+
+.column{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column--distributed{
+  justify-content: space-between;
+}
+
+.column--centered{
+  align-items: center;
+}
+
+.column--spaced{
+  justify-content: space-between;
+}
+
+
+.column--reversed{
+  flex-direction: row-reverse;
+}

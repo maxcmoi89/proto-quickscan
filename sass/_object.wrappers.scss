@@ -1,0 +1,27 @@
+.wrapper--centered{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wrapper--main{
+  padding-left: percentage(100/1680);
+  padding-right: percentage(100/1680);
+}
+
+.wrapper--form{
+  width: 100%;
+  padding-left: percentage(100/1680);
+  padding-right: percentage(100/1680);
+}
+
+
+
+@media(max-width:900px){
+  .wrapper--form{
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 0px;
+  }
+}

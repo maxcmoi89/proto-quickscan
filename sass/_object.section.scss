@@ -1,0 +1,20 @@
+section{
+  width: 100%;
+}
+
+.section{
+  padding:percentage(75/ 1680) 0px;
+  position: relative;
+}
+
+
+section.section--intro{
+  margin-top: percentage(70/1680);
+}
+
+
+@media(max-width:750px){
+  section.section--intro{
+    margin-top: make_em(50,15);
+  }
+}

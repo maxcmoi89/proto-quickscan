@@ -1,0 +1,22 @@
+.header__menu{
+  padding:make_em(50,15) percentage(100/1680) 0px;
+}
+
+.header__steps{
+  margin: percentage(90/1680) 0px percentage(50/1680);
+  padding-bottom: make_em(40,15);
+  border-bottom: 1px solid $color-border;
+}
+
+
+@media(max-width:600px){
+  nav.header__menu{
+    display: block;
+    text-align: center;
+  }
+
+  .header__steps{
+    margin: make_em(50,15) 0px make_em(30,15);
+  }
+
+}

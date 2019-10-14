@@ -1,0 +1,19 @@
+{
+  "name": "Barbato",
+  "version": "0.0.0",
+  "author": {
+    "name": "Axel Cardinaels",
+    "email": "axel.cardinaels@gmail.com"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "grunt-sass": "^2.1.0",
+    "node-sass": "^4.9.0"
+  }
+}

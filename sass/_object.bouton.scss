@@ -1,0 +1,31 @@
+.bouton{
+  border-radius: 15px;
+  font-size: make_em(20,15);
+  line-height: 1;
+  padding:make_em(16,20) make_em(25,20);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.bouton--primary{
+  background: $color-primary;
+  color: white;
+
+  &:hover{
+    background: darken($color-primary,10%);
+    color: white;
+  }
+}
+
+.bouton--full{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media(max-width:550px){
+  .bouton{
+    font-size: make_em(16,15);
+  }
+}

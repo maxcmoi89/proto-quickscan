@@ -1,0 +1,11 @@
+footer{
+  margin-top: percentage(120/1680);
+  text-align: center;
+  color: $color-text-light;
+  padding: make_em(20,15) 0px;
+  border-top: 1px solid $color-border;
+}
+
+.footer__logo{
+  width: 40px;
+}

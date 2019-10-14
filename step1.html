@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  	<meta charset="UTF-8">
+
+    <title>Wallonie - Calcul de mon PEB</title>
+
+  	<link rel="stylesheet" href="css/style.css">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Catamaran|Work+Sans:600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="header__menu column column--spaced column--centered">
+        <h1 class="title--site">
+          <span class="hide">Wallonie - Calcul de mon PEB</span>
+          <a href="index.html" title="Retourner à la page d'accueil">
+            <img src="img/wallonie.svg" alt="Logo du service public de la Wallonie"/>
+          </a>
+        </h1>
+
+        <ul class="header__partners list-inline">
+          <li class="partner__item">
+            <a href="https://energie.wallonie.be/fr/aides-et-primes.html?IDC=6358" class="partner__link" target="_blank" title="Visite le site de Walloreno">
+              <img src="img/wallo.png" class="partner__logo" alt="Logo de Walloreno" />
+            </a>
+          </li>
+
+          <li class="partner__item">
+            <a href="https://www.maisonpassive.be/" class="partner__link" target="_blank" title="Visite le site de PMP">
+              <img src="img/pmp.png" class="partner__logo partner__logo--small" alt="Logo de PMP" />
+            </a>
+          </li>
+
+          <li class="partner__item">
+            <a href="http://biodiversite.wallonie.be/fr/projets-life.html?IDC=3260" class="partner__link" target="_blank" title="Visite le site de Life">
+              <img src="img/life.png" class="partner__logo" alt="Logo de Life" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__steps wrapper--main wrapper--centered">
+        <h2 class="title--section">
+          1. Détermination de la typologie
+        </h2>
+
+        <nav class="steps__menu">
+          <ul class="steps__list column">
+            <li class="steps__item step--1">
+              <a href="step1.html" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  1/7 <span class="hide">Détermination de la typologie</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--2 step--disabled">
+              <a href="step2.html" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  2/7 <span class="hide">Validation de la typologie</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--3 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  3/7 <span class="hide">Isolation</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--4 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  4/7 <span class="hide">Ventilation et étanchéité à l'air</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--5 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  5/7 <span class="hide">Systèmes de chauffage</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--6 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  6/7 <span class="hide">Systèmes de production d'eau chaude</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="steps__item step--7 step--disabled">
+              <a href="#" title="Aller à l'étape 1" class="step__link">
+                <span>
+                  7/7 <span class="hide">Energie renouvelable</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <form class="wrapper--form" action="step2.html">
+          <formset class="form__question">
+            <h3 class="subtitle--section title--form">
+              <div class="question__item">
+                <span class="hide">Afficher plus de détails sur la question</span>
+                <div class="question__content">
+                  <p>La date de construction est un élément essentiel pour déterminer le bilan énergétique de votre habitation. En effet, des exigences énergétiques sont apparues à différentes époques et l’outil Quickscan se basera sur ces exigences pour déterminer les valeurs par défaut quand vous ne pourrez pas renseigner les compositions de parois notamment.</p>
+                  <p>Si vous n’avez aucune idée de la date de construction, sélectionner la case « je ne sais pas » ; différentes typologies possibles vous seront alors proposées et vous pourrez sélectionner celle qui vous semble la plus approchante de votre habitation.</p>
+                  <p>Bon à savoir : votre administration communale peut sans doute vous aider pour déterminer la date de construction de vote logement.</p>
+                </div>
+              </div>
+              <legend>De quand date probablement la construction ? </legend>
+            </h3>
+            <ul class="form__line column column--centered">
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="1918" class="form__input form--radio"/>
+                <label for="1918" class="column column--centered">
+                  Avant 1918
+                </label>
+              </li>
+
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="1918+" class="form__input form--radio"/>
+                <label for="1918+" class="column column--centered">
+                  Entre 1918 et 1945
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="1946+" class="form__input form--radio"/>
+                <label for="1946+" class="column column--centered">
+                  Entre 1946 et 1970
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="1971+" class="form__input form--radio"/>
+                <label for="1971+" class="column column--centered">
+                  Entre 1971 et 1984
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="1985+" class="form__input form--radio"/>
+                <label for="1985+" class="column column--centered">
+                  Entre 1985 et 1995
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="1995+" class="form__input form--radio"/>
+                <label for="1995+" class="column column--centered">
+                  Après 1995
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="date" id="unknown" class="form__input form--radio"/>
+                <label for="unknown" class="column column--centered">
+                  Je ne sais pas
+                </label>
+              </li>
+            </ul>
+          </formset>
+
+          <formset class="form__question">
+            <h3 class="subtitle--section title--form">
+              <div class="question__item">
+                <span class="hide">Afficher plus de détails sur la question</span>
+                <div class="question__content">
+                  <p>La localisation de votre habitation nous permet de vous proposer la typologie la plus adaptée. Si vous estimez que votre habitation n’est ni vraiment en ville, ni vraiment à la campagne, sélectionner « je ne sais pas choisir ».</p>
+                </div>
+              </div>
+              <legend>J'habite...</legend>
+            </h3>
+            <ul class="form__line column column--centered">
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="place" id="ville" class="form__input form--block"/>
+                <label for="ville" class="column column--centered">
+                  <img src="img/city.png" alt="Illustration du choix ville" class="img--regular label__img">
+                  En ville
+                </label>
+              </li>
+
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="place" id="campagne" class="form__input form--block"/>
+                <label for="campagne" class="column column--centered">
+                  <img src="img/campaign.png" alt="Illustration du choix ville" class="img--regular label__img">
+                  A la campagne ou dans un village
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="place" id="no-idea" class="form__input form--block"/>
+                <label for="no-idea" class="column column--centered">
+                  <img src="img/both.png" alt="Illustration du choix ville" class="img--regular label__img">
+                  je ne sais pas choisir
+                </label>
+              </li>
+            </ul>
+          </formset>
+
+          <formset class="form__question">
+            <h3 class="subtitle--section title--form">
+              <div class="question__item">
+                <span class="hide">Afficher plus de détails sur la question</span>
+                <div class="question__content">
+                  <p>La question permet de déterminer le nombre de « faces » de déperditions de votre habitation en contact avec l’extérieur ou des espaces non chauffés.</p>
+                  <p>Si votre habitation est indépendante sur tous les côtés ou n’est accolée qu’à un garage, une grange ou une étable, il faut considérer qu’elle est « indépendante (4 façades) ».</p>
+                  <p>Si elle est accolée d’un côté à une autre habitation ou un commerce par exemple, et que de l’autre côté, elle est libre ou accolée à un espace non chauffé, elle sera à considérer comme « semi-mitoyenne (3 façades) » et si elle se trouve entre 2 autres habitations ou commerces, elle sera considérée comme « mitoyenne (2 façades) »</p>
+                </div>
+              </div>
+              <legend>Mon habitation est …</legend>
+            </h3>
+            <ul class="form__line column column--centered">
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="faces" id="2faces" class="form__input form--block"/>
+                <label for="2faces" class="column column--centered">
+                  <img src="img/2faces.png" alt="Illustration du choix ville" class="img--tall label__img">
+                  Mitoyenne (2 facades)
+                </label>
+              </li>
+
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="faces" id="3faces" class="form__input form--block"/>
+                <label for="3faces" class="column column--centered">
+                  <img src="img/3faces.png" alt="Illustration du choix ville" class="img--tall label__img">
+                  Semi-mitoyenne (3 facades)
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="faces" id="4faces" class="form__input form--block"/>
+                <label for="4faces" class="column column--centered">
+                  <img src="img/4faces.png" alt="Illustration du choix ville" class="img--tall label__img">
+                  Indépendante (4 facades)
+                </label>
+              </li>
+            </ul>
+          </formset>
+
+          <formset class="form__question">
+            <h3 class="subtitle--section title--form">
+              <div class="question__item">
+                <span class="hide">Afficher plus de détails sur la question</span>
+                <div class="question__content">
+                  <p>Le nombre de niveaux habitables est à comprendre comme le nombre de niveaux « chauffés » ou « chauffables » de l’habitation. Ne considérez donc que les niveaux hors caves et grenier non aménagé. Si le niveau grenier est aménagé, il faut par contre le prendre en compte.</p>
+                </div>
+              </div>
+              <legend>Nombre de niveaux habitables (hors grenier non aménagé et cave) ?</legend>
+            </h3>
+            <ul class="form__line column column--centered">
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="faces" id="1level" class="form__input form--block"/>
+                <label for="1level" class="column column--centered">
+                  <img src="img/1level.png" alt="Illustration du choix ville" class="img--regular label__img">
+                  1 niveau (rez)
+                </label>
+              </li>
+
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="faces" id="2level" class="form__input form--block"/>
+                <label for="2level" class="column column--centered">
+                  <img src="img/2level.png" alt="Illustration du choix ville" class="img--regular label__img">
+                  2 niveaux (rez+1)
+                </label>
+              </li>
+              <li class="form__item form__item--radio form__item--classic">
+                <input type="radio" name="faces" id="level+" class="form__input form--block"/>
+                <label for="level+" class="column column--centered">
+                  <img src="img/level+.png" alt="Illustration du choix ville" class="img--regular label__img">
+                  3 niveaux ou +
+                </label>
+              </li>
+            </ul>
+          </formset>
+
+
+          <div class="form__submit">
+            <input type="submit" class="bouton bouton--primary" value="Passer à l'étape suivante"/>
+          </div>
+        </form>
+
+      </section>
+    </main>
+    <footer>
+      <a href="https://spw.wallonie.be/" target="_blank" title="Visiter le site du service public de la wallonie">
+        <img src="img/wallonie--without.svg" alt="Logo du service public de la Wallonie" class="footer__logo"/>
+      </a>
+
+      <p class="footer__text">2019, service public de la Wallonie</p>
+    </footer>
+  </body>
+
+  <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+</html>
